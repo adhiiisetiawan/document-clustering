@@ -1,4 +1,4 @@
-import preprocessing, tfidf
+import preprocessing, tfidf, som
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -11,5 +11,14 @@ if __name__ == '__main__':
                "untuk urusan yang tak mendesak, dan menghindari kontak fisik serta menjaga jarak dengan orang lain. Namun, seperti segalanya, " \
                "semua masa ada ujungnya. Pula PSBB."
 
+    dataTest = "Indonesia mengalami masa psbb yang sangat lama, yaitu sekitar 3 bulan. psbb dilakukan untuk mencegah" \
+               "penyebaran virus corona."
+
     preprocessing_doc = preprocessing.text_preprocessing(document)
-    print(tfidf.tfIdfCalculation([preprocessing_doc]))
+    document_weighting = tfidf.tfIdfCalculation([preprocessing_doc])
+
+    preprocessing_dataTest = preprocessing.text_preprocessing(dataTest)
+    document_weighting_dataTest = tfidf.tfIdfCalculation([preprocessing_dataTest])
+    print(document_weighting_dataTest)
+    som = som.selfOrganizingMaps(document_weighting, 0.6, 0.5, 1, document_weighting_dataTest)
+    print(som)
