@@ -41,9 +41,9 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch, dataTest):
     cluster2 = []
     cluster3 = []
 
-    dat
+    datatesting = np.array(dataTest)
 
-    for xTest in dataTest:
+    for xTest in datatesting:
         testing = [sum((weightTesting - xTest) ** 2) for weightTesting in np_weight]
         print("Euclidian Distance 1:", testing[0])
         print("Euclidian Distance 2", testing[1])
