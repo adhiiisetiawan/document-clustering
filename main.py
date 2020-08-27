@@ -27,6 +27,7 @@ if __name__ == '__main__':
         preprocessing_doc.append(preprocessing.text_preprocessing(d))
     
     document_weighting = tfidf_library.tfIdfCalculation(preprocessing_doc)
+    print(document_weighting)
     
 #    print(preprocessing_doc)
 #    print(document_weighting)
@@ -36,4 +37,4 @@ if __name__ == '__main__':
     
 #    print(document_weighting_dataTest)
     
-    som.selfOrganizingMaps(document_weighting, 0.6, 0.5, 1, 3)
+    # som.selfOrganizingMaps(document_weighting, 0.6, 0.5, 1, 3)
