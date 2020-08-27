@@ -6,7 +6,7 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 def text_preprocessing(document):
     # pada bagian ini digunakan untuk casefolding
-    caseFolding = document.lower()
+    caseFolding = str(document).lower()
 
     # ***ini digunakan untuk tokenisasi, disini saya menggunakan regex untuk
     # membersihkan tanda baca yang sekiranya mengganggu ***
