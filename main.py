@@ -27,7 +27,7 @@ if __name__ == '__main__':
         preprocessing_doc.append(preprocessing.text_preprocessing(d))
     
     document_weighting = tfidf_library.tfIdfCalculation(preprocessing_doc)
-    print(document_weighting)
+    # print(document_weighting)
     
 #    print(preprocessing_doc)
 #    print(document_weighting)
@@ -38,3 +38,14 @@ if __name__ == '__main__':
 #    print(document_weighting_dataTest)
     
     # som.selfOrganizingMaps(document_weighting, 0.6, 0.5, 1, 3)
+
+# Visualisasi
+    X, target = make_blobs(n_samples=30, n_features=2, centers=3)
+    centroids = som.selfOrganizingMaps(document_weighting, 0.6, 0.5, 100, 3)
+    colors = 'rgbcmyk'
+
+    for x, label in zip(X, target):
+        plt.plot(x[0], x[1], colors[label] + '.')
+
+    plt.plot(centroids[:, 0], centroids[:, 1], 'kx')
+    plt.show()
