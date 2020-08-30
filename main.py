@@ -1,6 +1,7 @@
 import preprocessing, som, tfidf_library
 from sklearn.datasets import make_blobs
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -75,13 +76,12 @@ if __name__ == '__main__':
 #    print(document_weighting_dataTest)
     
     # som.selfOrganizingMaps(document_weighting, 0.6, 0.5, 1, 3)
-
 # Visualisasi
-    X, target = make_blobs(n_samples=30, n_features=2, centers=3)
-    centroids = som.selfOrganizingMaps(document_weighting, 0.6, 0.5, 50, 3)
+    document_weighting, target = make_blobs(n_samples=300, n_features=2, centers=3)
+    centroids = som.selfOrganizingMaps(document_weighting, 0.6, 0.5, 100, 3)
     colors = 'rgbcmyk'
 
-    for x, label in zip(X, target):
+    for x, label in zip(document_weighting, target):
         plt.plot(x[0], x[1], colors[label] + '.')
 
     plt.plot(centroids[:, 0], centroids[:, 1], 'kx')

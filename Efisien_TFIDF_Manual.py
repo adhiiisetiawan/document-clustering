@@ -85,7 +85,11 @@ def computeTF(wordDict):
     tfDict = {}
     for word, count in wordDict.items():
         #rumusnya masih count, math.log error entah kenapa
-        tfDict[word] = count
+        # print(count)
+        if count == 0:
+            tfDict[word] = 0
+        else:
+            tfDict[word] = 1 + math.log10(float(count))
     return tfDict
 #eksekusi compute TF
 print("================================================================================================================")

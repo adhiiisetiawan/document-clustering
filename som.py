@@ -5,13 +5,13 @@ import numpy as np
 # maxEpoch = 100
 
 def selfOrganizingMaps(data, alpha, beta, maxEpoch, n_cluster):
-    epoch = 0
+
 
     np_data = np.array(data)
-    np_weight = np.around(np.random.uniform(low=0, high=1, size=(n_cluster, len(np_data[0]))), 3)
+    np_weight = np.around(np.random.uniform(low=0, high=1, size=(n_cluster, len(data[0]))), 3)
     print("-------bobot pertamakali-------")
     print(np_weight)
-
+    epoch = 0
     while epoch < maxEpoch:
         print("------------------------- Epoch ke", epoch + 1, "--------------------------------")
         for x in np_data:

@@ -1,4 +1,5 @@
 import preprocessing
+import numpy as np
 
 #docA = "Layang-layang terbang diangkasa"
 #docB = "Burung- burung terbang diangkasa"
@@ -21,6 +22,55 @@ preprocessing_doc = []
 for d in document:
     preprocessing_doc.append(preprocessing.text_preprocessing(d))
 
+print("Dokumen setelah preprocessing lansung")
+print(preprocessing_doc)
+
+
+
+stringDocument = " "
+documentToString = stringDocument.join(preprocessing_doc)
+bow = documentToString.split(" ")
+print("")
+print("hasil split adhi")
+print(bow)
+
+wordset = set(bow)
+print("")
+print("hasil remove split")
+print(wordset)
+
+wordDict = dict.fromkeys(wordset,0)
+
+for word in bow:
+    wordDict[word] +=1
+print("")
+print("word dict adhi")
+print(wordDict)
+
+def computeTF(wordDict,bow):
+    tfDict = {}
+    bowCount = len(bow)
+    for word, count in wordDict.items():
+        tfDict[word] = count/float(bowCount)
+    return tfDict
+
+tfBow = computeTF(wordDict,bow)
+print("")
+print("Hasil tf adhi")
+print(tfBow)
+
+# disini remove duplicate kuhapus
+# removeDuplicate = list(
+#     dict.fromkeys(hasilSplit))
+# print("remove duplicate")
+# print(removeDuplicate)
+#
+# string = " "  # membuat sebuah varible kosong bernama string dengan tipe string juga yang nantinya akan digunakan untuk mengkonversi list ke string
+# hasilRemove = string.join(removeDuplicate)
+# print(hasilRemove)
+
+
+print("")
 print("Ini Dokumen2 setelah preprocessing")
 print(preprocessing_doc[0])
 print(preprocessing_doc[1])
@@ -29,6 +79,25 @@ print(preprocessing_doc[3])
 print(preprocessing_doc[4])
 print("")
 
+bowDoc = ""
+print("hasil Bow Doc")
+for i in preprocessing_doc:
+    bowDoc = i.split(" ")
+    # bowDoc = doc.split(" ")
+    # print(bowDoc)
+    hasilbow = set(bowDoc)
+    # print(set(hasilbow))
+    wordDictA = dict.fromkeys(hasilbow, 0)
+    # print(bowDoc)
+    # for word in bowDoc:
+    wordDictA[bowDoc] += 1
+    print(wordDictA)
+print("")
+# print("worddict adhi yg kedua")
+# for word in hasilbow:
+
+
+print("")
 docA = preprocessing_doc[0]
 docB = preprocessing_doc[1]
 docC = preprocessing_doc[2]
@@ -99,13 +168,6 @@ test = pd.DataFrame([wordDictA,wordDictB,wordDictC,wordDictD,wordDictE])
 
 print("Ini Gambaran matriks")
 print(test)
-
-def computeTF(wordDict,bow):
-    tfDict = {}
-    bowCount = len(bow)
-    for word, count in wordDict.items():
-        tfDict[word] = count/float(bowCount)
-    return tfDict
 
 tfBowA = computeTF(wordDictA,bowA)
 tfBowB = computeTF(wordDictB,bowB)
