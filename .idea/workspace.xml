@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="023efaec-1a51-4f35-b78c-029ad3c439fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Efisien_TFIDF_Manual.py" beforeDir="false" afterPath="$PROJECT_DIR$/Efisien_TFIDF_Manual.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/som.py" beforeDir="false" afterPath="$PROJECT_DIR$/som.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tfidf_manual2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tfidf_manual2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Efisien_TFIDF_Manual.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme_TFIDF_Manual.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tfidf_manual2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,29 +69,7 @@
       <recent name="$PROJECT_DIR$/text_processing" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Efisien_TFIDF_Manual 2">
-    <configuration name="Efisien_TFIDF_Manual 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DocumentClustering" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Efisien_TFIDF_Manual 2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.tfidf_manual">
     <configuration name="Efisien_TFIDF_Manual" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DocumentClustering" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,6 +136,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tfidf_manual" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DocumentClustering" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tfidf_manual.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tfidf_manual2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DocumentClustering" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,7 +182,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Efisien_TFIDF_Manual 2" />
+        <item itemvalue="Python.tfidf_manual" />
         <item itemvalue="Python.Efisien_TFIDF_Manual" />
         <item itemvalue="Python.tfidf_manual2" />
         <item itemvalue="Python.preprocessing" />
@@ -212,7 +209,7 @@
       <workItem from="1598519091138" duration="2707000" />
       <workItem from="1598675515394" duration="10696000" />
       <workItem from="1598769344664" duration="4378000" />
-      <workItem from="1598776146399" duration="521000" />
+      <workItem from="1598776146399" duration="824000" />
     </task>
     <servers />
   </component>
@@ -232,22 +229,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1320" height="244" key="GridCell.Tab.0.bottom" timestamp="1598776222516">
+    <state width="1320" height="244" key="GridCell.Tab.0.bottom" timestamp="1598776867830">
       <screen x="0" y="38" width="1366" height="730" />
     </state>
-    <state width="1320" height="244" key="GridCell.Tab.0.bottom/0.38.1366.730@0.38.1366.730" timestamp="1598776222516" />
-    <state width="1320" height="244" key="GridCell.Tab.0.center" timestamp="1598776222516">
+    <state width="1320" height="244" key="GridCell.Tab.0.bottom/0.38.1366.730@0.38.1366.730" timestamp="1598776867830" />
+    <state width="1320" height="244" key="GridCell.Tab.0.center" timestamp="1598776867829">
       <screen x="0" y="38" width="1366" height="730" />
     </state>
-    <state width="1320" height="244" key="GridCell.Tab.0.center/0.38.1366.730@0.38.1366.730" timestamp="1598776222516" />
-    <state width="1320" height="244" key="GridCell.Tab.0.left" timestamp="1598776222515">
+    <state width="1320" height="244" key="GridCell.Tab.0.center/0.38.1366.730@0.38.1366.730" timestamp="1598776867829" />
+    <state width="1320" height="244" key="GridCell.Tab.0.left" timestamp="1598776867828">
       <screen x="0" y="38" width="1366" height="730" />
     </state>
-    <state width="1320" height="244" key="GridCell.Tab.0.left/0.38.1366.730@0.38.1366.730" timestamp="1598776222515" />
-    <state width="1320" height="244" key="GridCell.Tab.0.right" timestamp="1598776222516">
+    <state width="1320" height="244" key="GridCell.Tab.0.left/0.38.1366.730@0.38.1366.730" timestamp="1598776867828" />
+    <state width="1320" height="244" key="GridCell.Tab.0.right" timestamp="1598776867829">
       <screen x="0" y="38" width="1366" height="730" />
     </state>
-    <state width="1320" height="244" key="GridCell.Tab.0.right/0.38.1366.730@0.38.1366.730" timestamp="1598776222516" />
+    <state width="1320" height="244" key="GridCell.Tab.0.right/0.38.1366.730@0.38.1366.730" timestamp="1598776867829" />
     <state width="1320" height="213" key="GridCell.Tab.1.bottom" timestamp="1598277266027">
       <screen x="0" y="38" width="1366" height="730" />
     </state>
@@ -266,7 +263,7 @@
     <state width="1320" height="213" key="GridCell.Tab.1.right/0.38.1366.730@0.38.1366.730" timestamp="1598277266027" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DocumentClustering$Efisien_TFIDF_Manual_2.coverage" NAME="Efisien_TFIDF_Manual 2 Coverage Results" MODIFIED="1598776222494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DocumentClustering$Efisien_TFIDF_Manual_2.coverage" NAME="Efisien_TFIDF_Manual 2 Coverage Results" MODIFIED="1598776746303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DocumentClustering$main.coverage" NAME="main Coverage Results" MODIFIED="1598521113920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DocumentClustering$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1598185662365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text_processing" />
     <SUITE FILE_PATH="coverage/DocumentClustering$tfidf_manual2.coverage" NAME="tfidf_manual2 Coverage Results" MODIFIED="1598699333087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
