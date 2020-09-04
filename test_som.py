@@ -43,10 +43,7 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch):
     cluster1 = []
     cluster2 = []
     cluster3 = []
-    # cluster4 = []
-    # dataTest = [[0.1, 0.2, 0.3, 0.4],
-    #            [0.5, 0.6, 0.7, 0.8],
-    #            [0.9, 0.10, 0.11, 0.12]]
+
     for xTest in data:
         testing = [sum((weightTesting - xTest) ** 2) for weightTesting in np_weight]
         print("")
