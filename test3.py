@@ -231,13 +231,13 @@ document = [
 
 ]
 
-#document = [
+# document = [
 #        "Sekarang saya sedang suka memasak. Masakan kesukaan saya sekarang adalah nasi goreng. Cara memasak nasi goreng adalah nasi digoreng",
 #        "Ukuran nasi sangatlah kecil, namun saya selalu makan nasi",
 #        "Nasi berasal dari beras yang ditanam di sawah. Sawah berukuran kecil hanya bisa ditanami sedikit beras",
 #        "Mobil dan bus dapat mengangkut banyak penumpang. Namun, bus berukuran jauh lebih besar dari mobil, apalagi mobil-mobilan",
 #        "Bus pada umumnya berukuran besar dan berpenumpang banyak, sehingga bus tidak bisa melewati persawahan"
-#]
+# ]
 ########################################################################################################################
 #buat list.append untuk bikin list yg isinya setiap kalimat yg setelah dipreprocessing
 preprocessing_doc = []
@@ -265,13 +265,11 @@ print(" ")
 
 ########################################################################################################################
 #untuk membuat set kata (kata unik)
-# preprocessing_doc = []
-# for d in document:
-#     preprocessing_doc.append(preprocessing.text_preprocessing(d))
+preprocessing_doc = []
+for d in document:
+    preprocessing_doc.append(preprocessing.text_preprocessing(d))
 gabungan = " ".join(preprocessing_doc)
 kata2 = gabungan.split()
-print("INI KATA2")
-print(kata2)
 print("================================================================================================================")
 print("Ini WordSet")
 print("================================================================================================================")
@@ -429,16 +427,16 @@ import pandas as pd
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 
-dataFrameTfIdf = pd.DataFrame(list_tfidf)
+test2 = pd.DataFrame(list_tfidf)
 print("================================================================================================================")
 print("Ini Gambaran matriks hasil TFIDF")
 print("================================================================================================================")
 print("")
-print(dataFrameTfIdf)
+print(test2)
 print("")
 
 print("test")
-print(dataFrameTfIdf.values)
+print(test2.values)
 print("")
 
 ########################################################################################################################
@@ -458,7 +456,7 @@ print("")
 #try normalize
 import numpy as np
 from sklearn.preprocessing import normalize
-norm = normalize(dataFrameTfIdf.values)
+norm = normalize(test2.values)
 #df = pd.DataFrame(np.concatenate(norm)
 print("================================================================================================================")
 print("Hasil Normalization")
@@ -469,5 +467,10 @@ print("")
 print("test som")
 import test_som
 
-som = test_som.selfOrganizingMaps(norm,0.6, 0.5, 20)
+
+#dataTest = [[0.1, 0.2, 0.3, 0.4],
+#            [0.5, 0.6, 0.7, 0.8],
+#            [0.9, 0.10, 0.11, 0.12]]
+
+som = test_som.selfOrganizingMaps(norm,0.6, 0.5, 10,document)
 print(som)
