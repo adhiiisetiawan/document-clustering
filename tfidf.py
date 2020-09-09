@@ -1,4 +1,5 @@
 import preprocessing
+import math
 
 def tfIdfFunction(document):
     preprocessing_doc = []
@@ -71,15 +72,7 @@ def tfIdfFunction(document):
         hasil = word_count(kalimat)
         list.append(hasil)
 
-    # def dataFrame(hasil):
-    #     import pandas as pd
-    #     pd.set_option('display.max_columns', None)
-    #     pd.set_option('display.max_rows', None)
-    #     test = pd.DataFrame(hasil)
-    #     return test
-
     # compute TF
-    import math
     def computeTF(wordDict):
         tfDict = {}
         for word, count in wordDict.items():
@@ -97,7 +90,6 @@ def tfIdfFunction(document):
 
     # membuat compute IDF
     def computeIDF(docList):
-        import math
         idfDict = {}
         N = len(docList)
         idfDict = dict.fromkeys(docList[0].keys(), 0)
@@ -105,13 +97,10 @@ def tfIdfFunction(document):
             for word, val in doc.items():
                 if val > 0:
                     idfDict[word] += 1
-        # print("ini idfDict")
-        # print(idfDict)
-        # print("")
+
         for word, val in idfDict.items():
             idfDict[word] = math.log10(N / float(val))
-        #
-        #
+
         return idfDict
 
     idfs = computeIDF(list)
@@ -128,7 +117,6 @@ def tfIdfFunction(document):
     # menghitung hasil tf dikali idfs
     for dicWord in list_tf:
         hasil_tfidf = computeTFIDF(dicWord, idfs)
-        # print(hasil_tfidf)
         list_tfidf.append(hasil_tfidf)
 
     return list_tfidf

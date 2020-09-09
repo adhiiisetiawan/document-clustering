@@ -1,13 +1,11 @@
-import preprocessing, som, tfidf
-from sklearn.datasets import make_blobs
-import matplotlib.pyplot as plt
-import numpy as np
+import som, tfidf
 import pandas as pd
+from sklearn.preprocessing import normalize
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
-    thesis = pd.read_csv('Judul Skripsi TIF.csv')
+    thesis = pd.read_csv('document/Judul Skripsi TIF.csv')
     thesis = thesis.drop(thesis.columns[[0, 1, 3]], axis=1)
     document = thesis.values
 
@@ -17,9 +15,6 @@ if __name__ == '__main__':
     pd.set_option('display.max_rows', None)
 
     dataFrame_tfidf = pd.DataFrame(tfidf_doc)
-    # print(test2)
-
-    from sklearn.preprocessing import normalize
 
     norm = normalize(dataFrame_tfidf.values)
 

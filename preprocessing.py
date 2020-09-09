@@ -12,7 +12,7 @@ def text_preprocessing(document):
     tokenization = re.findall(r"[\w']+", caseFolding)
 
     # proses stopwords removal dimulai dari sini
-    file = open('stopword_tala.txt', 'r')  # disini saya membuka dokumen stopword tala
+    file = open('document/stopword_tala.txt', 'r')  # disini saya membuka dokumen stopword tala
     stopWordsList = file.read()  # kemudian membacanya dan disimpan pada variable stopwordsList
     hasilStopwords = []  # saya membuat sebuah list kosong yang nantinya akan disimpan sebuah hasil dari stopwords
 
