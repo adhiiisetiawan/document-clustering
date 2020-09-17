@@ -1,5 +1,5 @@
 import numpy as np
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 def selfOrganizingMaps(data, alpha, beta, maxEpoch,document):
