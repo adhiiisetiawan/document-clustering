@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023efaec-1a51-4f35-b78c-029ad3c439fe" name="Default Changelist" comment="" />
+    <list default="true" id="023efaec-1a51-4f35-b78c-029ad3c439fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/som.py" beforeDir="false" afterPath="$PROJECT_DIR$/som.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +32,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -58,6 +71,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -285,24 +299,28 @@
       <screen x="0" y="38" width="1366" height="730" />
     </state>
     <state x="416" y="152" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.38.1366.730@0.38.1366.730" timestamp="1599627325938" />
-    <state width="1320" height="286" key="GridCell.Tab.0.bottom" timestamp="1599632781451">
-      <screen x="0" y="38" width="1366" height="730" />
+    <state width="1320" height="284" key="GridCell.Tab.0.bottom" timestamp="1600332224367">
+      <screen x="0" y="25" width="1366" height="743" />
     </state>
+    <state width="1320" height="284" key="GridCell.Tab.0.bottom/0.25.1366.743@0.25.1366.743" timestamp="1600332224367" />
     <state width="1320" height="560" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1599457900052" />
     <state width="1320" height="286" key="GridCell.Tab.0.bottom/0.38.1366.730@0.38.1366.730" timestamp="1599632781451" />
-    <state width="1320" height="286" key="GridCell.Tab.0.center" timestamp="1599632781450">
-      <screen x="0" y="38" width="1366" height="730" />
+    <state width="1320" height="284" key="GridCell.Tab.0.center" timestamp="1600332224365">
+      <screen x="0" y="25" width="1366" height="743" />
     </state>
+    <state width="1320" height="284" key="GridCell.Tab.0.center/0.25.1366.743@0.25.1366.743" timestamp="1600332224365" />
     <state width="1320" height="560" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1599457900050" />
     <state width="1320" height="286" key="GridCell.Tab.0.center/0.38.1366.730@0.38.1366.730" timestamp="1599632781450" />
-    <state width="1320" height="286" key="GridCell.Tab.0.left" timestamp="1599632781450">
-      <screen x="0" y="38" width="1366" height="730" />
+    <state width="1320" height="284" key="GridCell.Tab.0.left" timestamp="1600332224364">
+      <screen x="0" y="25" width="1366" height="743" />
     </state>
+    <state width="1320" height="284" key="GridCell.Tab.0.left/0.25.1366.743@0.25.1366.743" timestamp="1600332224364" />
     <state width="1320" height="560" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1599457900049" />
     <state width="1320" height="286" key="GridCell.Tab.0.left/0.38.1366.730@0.38.1366.730" timestamp="1599632781449" />
-    <state width="1320" height="286" key="GridCell.Tab.0.right" timestamp="1599632781450">
-      <screen x="0" y="38" width="1366" height="730" />
+    <state width="1320" height="284" key="GridCell.Tab.0.right" timestamp="1600332224366">
+      <screen x="0" y="25" width="1366" height="743" />
     </state>
+    <state width="1320" height="284" key="GridCell.Tab.0.right/0.25.1366.743@0.25.1366.743" timestamp="1600332224366" />
     <state width="1320" height="560" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1599457900051" />
     <state width="1320" height="286" key="GridCell.Tab.0.right/0.38.1366.730@0.38.1366.730" timestamp="1599632781450" />
     <state width="1320" height="213" key="GridCell.Tab.1.bottom" timestamp="1598277266027">
@@ -321,6 +339,10 @@
       <screen x="0" y="38" width="1366" height="730" />
     </state>
     <state width="1320" height="213" key="GridCell.Tab.1.right/0.38.1366.730@0.38.1366.730" timestamp="1598277266027" />
+    <state x="172" y="31" key="SettingsEditor" timestamp="1600331419731">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="172" y="31" key="SettingsEditor/0.25.1366.743@0.25.1366.743" timestamp="1600331419731" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599196837546">
       <screen x="0" y="38" width="1366" height="730" />
     </state>
@@ -329,7 +351,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DocumentClustering$Efisien_TFIDF_Manual_2.coverage" NAME="tfidf_manual Coverage Results" MODIFIED="1598785826976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DocumentClustering$tfidf_manual.coverage" NAME="tfidf_manual Coverage Results" MODIFIED="1599201442581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DocumentClustering$main.coverage" NAME="main Coverage Results" MODIFIED="1599632417578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DocumentClustering$main.coverage" NAME="main Coverage Results" MODIFIED="1600331854717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DocumentClustering$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1598185662365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text_processing" />
     <SUITE FILE_PATH="coverage/DocumentClustering$tfidf_manual2.coverage" NAME="tfidf_manual2 Coverage Results" MODIFIED="1598699333087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DocumentClustering$Efisien_TFIDF_Manual.coverage" NAME="Efisien_TFIDF_Manual Coverage Results" MODIFIED="1598776046497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
