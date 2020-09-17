@@ -51,17 +51,17 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document):
     #
     # print("")
     print("---------------------Hasil cluster --------------------------")
-    print("cluster 1: ", list(cluster1))
-    print("cluster 2: ", list(cluster2))
-    print("cluster 3: ", list(cluster3))
-    print("cluster 4: ", list(cluster4))
-    print("cluster 5: ", list(cluster5))
-    print("cluster 6: ", list(cluster6))
+    print("cluster 1: ", np.array(cluster1).tolist())
+    print("cluster 2: ", np.array(cluster2).tolist())
+    print("cluster 3: ", np.array(cluster3).tolist())
+    print("cluster 4: ", np.array(cluster4).tolist())
+    print("cluster 5: ", np.array(cluster5).tolist())
+    print("cluster 6: ", np.array(cluster6).tolist())
     # print("")
 
-    # wordcloud = WordCloud().generate(cluster1)
-    # plt.imshow(wordcloud, interpolation='bilinear')
-    # plt.axis("off")
-    # plt.show()
+    wordcloud = WordCloud().generate(str(np.array(cluster1).tolist()))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis("off")
+    plt.show()
 
     return " "
