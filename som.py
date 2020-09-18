@@ -1,5 +1,5 @@
 import numpy as np
-from wordcloud import WordCloud
+from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
 from collections import Counter
 
@@ -68,10 +68,17 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document):
 
     wordCountC1 = Counter(listCluster1)
 
+    casefolding = str(wordCountC1).lower()
+    file = open('document/stopword_tala.txt', 'r')
+    stopWordsList = file.read()
+    hasilStopwords = []
 
+    for w in casefolding:
+        if w not in stopWordsList:
+            hasilStopwords.append(w)
 
     if cluster1:
-        c1 = WordCloud().generate(str(wordCountC1.most_common(5)))
+        c1 = WordCloud(stopwords=stopWordsList).generate(casefolding)
         plt.imshow(c1, interpolation='bilinear')
         plt.axis("off")
         plt.show()
