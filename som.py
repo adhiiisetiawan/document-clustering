@@ -1,6 +1,7 @@
 import numpy as np
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+from collections import Counter
 
 def selfOrganizingMaps(data, alpha, beta, maxEpoch,document):
     epoch = 0
@@ -59,42 +60,45 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document):
     print("cluster 6: ", np.array(cluster6).tolist())
     # print("")
 
+    wordCount = Counter(np.array(cluster1).tolist())
+
+
 
     if cluster1:
-        c1 = WordCloud().generate(str(np.array(cluster1).tolist()))
+        c1 = WordCloud().generate(str(wordCount.most_common(5)))
         plt.imshow(c1, interpolation='bilinear')
         plt.axis("off")
         plt.show()
 
-    if cluster2:
-        c2 = WordCloud().generate(str(np.array(cluster2).tolist()))
-        plt.imshow(c2, interpolation='bilinear')
-        plt.axis("off")
-        plt.show()
-
-    if cluster3:
-        c3 = WordCloud().generate(str(np.array(cluster3).tolist()))
-        plt.imshow(c3, interpolation='bilinear')
-        plt.axis("off")
-        plt.show()
-
-    if cluster4:
-        c4 = WordCloud().generate(str(np.array(cluster4).tolist()))
-        plt.imshow(c4, interpolation='bilinear')
-        plt.axis("off")
-        plt.show()
-
-    if cluster5:
-        c5 = WordCloud().generate(str(np.array(cluster5).tolist()))
-        plt.imshow(c5, interpolation='bilinear')
-        plt.axis("off")
-        plt.show()
-
-    if cluster6:
-        c6 = WordCloud().generate(str(np.array(cluster6).tolist()))
-        plt.imshow(c6, interpolation='bilinear')
-        plt.axis("off")
-        plt.show()
+    # if cluster2:
+    #     c2 = WordCloud().generate(str(np.array(cluster2).tolist()))
+    #     plt.imshow(c2, interpolation='bilinear')
+    #     plt.axis("off")
+    #     plt.show()
+    #
+    # if cluster3:
+    #     c3 = WordCloud().generate(str(np.array(cluster3).tolist()))
+    #     plt.imshow(c3, interpolation='bilinear')
+    #     plt.axis("off")
+    #     plt.show()
+    #
+    # if cluster4:
+    #     c4 = WordCloud().generate(str(np.array(cluster4).tolist()))
+    #     plt.imshow(c4, interpolation='bilinear')
+    #     plt.axis("off")
+    #     plt.show()
+    #
+    # if cluster5:
+    #     c5 = WordCloud().generate(str(np.array(cluster5).tolist()))
+    #     plt.imshow(c5, interpolation='bilinear')
+    #     plt.axis("off")
+    #     plt.show()
+    #
+    # if cluster6:
+    #     c6 = WordCloud().generate(str(np.array(cluster6).tolist()))
+    #     plt.imshow(c6, interpolation='bilinear')
+    #     plt.axis("off")
+    #     plt.show()
 
 
     return " "
