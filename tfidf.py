@@ -45,7 +45,6 @@ def tfIdfFunction(document):
         for word, val in doc.items():
             if val > 0:
                 DfDict[word] += 1
-    print(DfDict)
 
     # FEATURE SELECTION
     print("")
