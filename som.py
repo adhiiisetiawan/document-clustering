@@ -49,23 +49,29 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document):
     print("Cluster 4: ", len(cluster4))
     print("Cluster 5: ", len(cluster5))
     print("Cluster 6: ", len(cluster6))
-    #
-    # print("")
+
+    listCluster1 = np.array(cluster1).tolist()
+    listCluster2 = np.array(cluster2).tolist()
+    listCluster3 = np.array(cluster3).tolist()
+    listCluster4 = np.array(cluster4).tolist()
+    listCluster5 = np.array(cluster5).tolist()
+    listCluster6 = np.array(cluster6).tolist()
+
     print("---------------------Hasil cluster --------------------------")
-    print("cluster 1: ", np.array(cluster1).tolist())
-    print("cluster 2: ", np.array(cluster2).tolist())
-    print("cluster 3: ", np.array(cluster3).tolist())
-    print("cluster 4: ", np.array(cluster4).tolist())
-    print("cluster 5: ", np.array(cluster5).tolist())
-    print("cluster 6: ", np.array(cluster6).tolist())
+    print("cluster 1: ", listCluster1)
+    print("cluster 2: ", listCluster2)
+    print("cluster 3: ", listCluster3)
+    print("cluster 4: ", listCluster4)
+    print("cluster 5: ", listCluster5)
+    print("cluster 6: ", listCluster6)
     # print("")
 
-    wordCount = Counter(np.array(cluster1).tolist())
+    wordCountC1 = Counter(listCluster1)
 
 
 
     if cluster1:
-        c1 = WordCloud().generate(str(wordCount.most_common(5)))
+        c1 = WordCloud().generate(str(wordCountC1.most_common(5)))
         plt.imshow(c1, interpolation='bilinear')
         plt.axis("off")
         plt.show()
