@@ -2,6 +2,7 @@ import numpy as np
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import preprocessing
+from sklearn.metrics import davies_bouldin_score
 
 def selfOrganizingMaps(data, alpha, beta, maxEpoch,document):
     epoch = 0
@@ -23,25 +24,29 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document):
     cluster4 = []
     cluster5 = []
     cluster6 = []
+    label = []
 
     judul = document
     for xTest in range (len(data)):
         testing = [sum((weightTesting - data[xTest]) ** 2) for weightTesting in np_weight]
-        # if testing[0] <= testing[1] and testing[0] <= testing[2]:
         if min(testing) == testing[0]:
             cluster1.append(judul[xTest])
-        # elif testing[1] <= testing[0] and testing[1] <= testing[2]:
+            label.append(0)
         elif min(testing) == testing[1]:
             cluster2.append(judul[xTest])
-        # elif testing[2] <= testing[0] and testing[2] <= testing[1]:
+            label.append(1)
         elif min(testing) == testing[2]:
             cluster3.append(judul[xTest])
+            label.append(2)
         elif min(testing) == testing[3]:
             cluster4.append(judul[xTest])
+            label.append(3)
         elif min(testing) == testing[4]:
             cluster5.append(judul[xTest])
+            label.append(4)
         elif min(testing) == testing[5]:
             cluster6.append(judul[xTest])
+            label.append(5)
     print("--------------------- Berapa Banyak Cluster -----------------")
     print("Cluster 1: ", len(cluster1))
     print("Cluster 2: ", len(cluster2))
@@ -65,6 +70,10 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document):
     print("cluster 5: ", listCluster5)
     print("cluster 6: ", listCluster6)
     # print("")
+
+    print("")
+    print("--------------Akurasi------------------")
+    print("Hasil Akurasi: ", davies_bouldin_score(data, label))
 
     result1 = preprocessing.preprocessingWordCloud(str(listCluster1))
     result2 = preprocessing.preprocessingWordCloud(str(listCluster2))
