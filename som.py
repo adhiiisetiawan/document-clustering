@@ -1,4 +1,5 @@
 import numpy as np
+import accuracy
 import preprocessing
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
@@ -45,8 +46,8 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document, n_cluster):
     for i in range(len(classified)):
         print("cluster {0} : ".format(i+1), classified[i])
 
-    print("----------label-----------------")
-    print("Label: ", label)
+    # print("----------label-----------------")
+    # print("Label: ", label)
 
     print("----------Berapa Banyak Cluster-------------")
     for i in range(len(classified)):
@@ -150,6 +151,15 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document, n_cluster):
     #     plt.imshow(c6, interpolation='bilinear')
     #     plt.axis("off")
     #     plt.show()
+    db = {}
+    for i in range(2, 10):
+        # selfOrganizingMaps = som.selfOrganizingMaps(data, 0.6, 0.5, 100, document, n_cluster=i)
+        db[i] = davies_bouldin_score(data, label)
 
+    plt.figure(figsize=(5, 5))
+    plt.plot(list(db.keys()), list(db.values()))
+    plt.xlabel("Number Cluster")
+    plt.ylabel("Accuracy Values")
+    plt.show()
 
     return " "
