@@ -18,5 +18,5 @@ if __name__ == '__main__':
     dataFrame_tfidf = pd.DataFrame(tfidf_doc)
 
     norm = normalize(dataFrame_tfidf.values)
-    som = som.selfOrganizingMaps(norm, 0.6, 0.5, 100, document)
+    som = som.selfOrganizingMaps(norm, 0.6, 0.5, 100, document, 10)
     print(som)
