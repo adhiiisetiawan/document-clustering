@@ -1,9 +1,7 @@
 import numpy as np
-import accuracy
 import preprocessing
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
-from sklearn.metrics import davies_bouldin_score
 
 def selfOrganizingMaps(data, alpha, beta, maxEpoch,document, n_cluster):
     epoch = 0
