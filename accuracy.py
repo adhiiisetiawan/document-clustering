@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
-import som
+import test_som
 from sklearn.metrics import davies_bouldin_score
 
 def accuracy(data, label, document):
     db = {}
     for i in range(2, 10):
-        # selfOrganizingMaps = som.selfOrganizingMaps(data, 0.6, 0.5, 100, document, n_cluster=i)
+        selfOrganizingMaps = test_som.test_som(data, 0.6, 0.5, 100, n_cluster=i)
         db[i] = davies_bouldin_score(data, label)
 
     plt.figure(figsize=(5, 5))
