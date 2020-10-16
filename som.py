@@ -53,6 +53,14 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document, n_cluster):
     for i in range(len(classified)):
         print("Banyaknya cluster {0} :".format(i+1), len(classified[i]))
 
+    for i in range(len(classified)):
+        result = preprocessing.preprocessingWordCloud(str(classified[i]))
+        if classified[i]:
+            c1 = WordCloud(background_color="white").generate(result)
+            plt.imshow(c1, interpolation='bilinear')
+            plt.axis("off")
+            plt.show()
+
     return " "
 
 def pengujian(data,alpha,beta,maxEpoch,n_cluster):
