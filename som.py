@@ -40,9 +40,9 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document, n_cluster):
                 classified[i].append(judul[xTest])
                 label.append(i)
                 break
-    print("----------Hasil Cluster-------------")
-    for i in range(len(classified)):
-        print("cluster {0} : ".format(i+1), classified[i])
+    # print("----------Hasil Cluster-------------")
+    # for i in range(len(classified)):
+    #     print("cluster {0} : ".format(i+1), classified[i])
 
     # print("----------label-----------------")
     # print("Label: ", label)
@@ -57,9 +57,10 @@ def selfOrganizingMaps(data, alpha, beta, maxEpoch,document, n_cluster):
             c1 = WordCloud(background_color="white").generate(result)
             plt.imshow(c1, interpolation='bilinear')
             plt.axis("off")
+            plt.savefig("img/Cluster "+str(i)+".png")
             plt.show()
 
-    return " "
+    return label
 
 def pengujian(data,alpha,beta,maxEpoch,n_cluster):
     epoch = 0
