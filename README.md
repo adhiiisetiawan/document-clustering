@@ -47,5 +47,6 @@ Project is: _in progress_, _finished_, _no longer continue_ and why?
 ## Inspiration
 Add here credits. Project inspired by..., based on...
 
-## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+## Author
+* [Adhi Setiawan](https://www.linkedin.com/in/adhiisetiawan) 
+* [Giffaro Nandra Rhidoaldi]()
