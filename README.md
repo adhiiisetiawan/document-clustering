@@ -13,7 +13,7 @@
 Add more general information about project. What the purpose of the project is? Motivation?
 
 ## Screenshots
-![Cluster 5](./img/Cluster 5.png)
+![Example screenshoot](./img/Cluster 5.png)
 
 ## Package
 * <a href="https://numpy.org/">Numpy</a>
