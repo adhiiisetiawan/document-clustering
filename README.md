@@ -13,7 +13,7 @@
 Add more general information about project. What the purpose of the project is? Motivation?
 
 ## Screenshots
-![Example screenshot](./img/Accuracy.png)
+![Example screenshot](./img/Akurasi.png)
 
 ## Package
 * <a href="https://numpy.org/">Numpy</a>
@@ -24,7 +24,8 @@ Add more general information about project. What the purpose of the project is? 
 * <a href="https://scikit-learn.org/">SKLearn</a>
 
 ## Setup
-Describe how to install / setup your local environement / add link to demo version.
+1. If you haven't installed the packages above, please install them first.
+2. Run at main.py
 
 ## Inspiration
 Add here credits. Project inspired by..., based on...
