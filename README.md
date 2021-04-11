@@ -1,13 +1,11 @@
 # Document Clustering System for Thesis Document Informatics Student
-> Here goes your awesome project description!
+> This repository is my project during my internship at the Laboratory of Technology Enhanced Learning, Faculty of Computer Science, Brawijaya University. This is a document clustering system used to grouping student thesis documents from informatics engineering.
 
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
-* [Technologies](#technologies)
+* [Package](#package)
 * [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
@@ -17,32 +15,16 @@ Add more general information about project. What the purpose of the project is? 
 ## Screenshots
 ![Example screenshot](./img/Accuracy.png)
 
-## Technologies
+## Package
 * <a href="https://numpy.org/">Numpy</a>
 * <a href="https://pandas.pydata.org/">Pandas</a>
+* <a href="https://matplotlib.org/">Matplotlib</a>
 * <a href="https://pypi.org/project/PySastrawi/">PySastrawi</a>
 * <a href="https://pypi.org/project/wordcloud/">WordCloud</a>
-* <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.davies_bouldin_score.html">Davies Bouldin Index</a>
+* <a href="https://scikit-learn.org/">SKLearn</a>
 
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
-
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
-
-## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
-
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
-
-## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
 
 ## Inspiration
 Add here credits. Project inspired by..., based on...
