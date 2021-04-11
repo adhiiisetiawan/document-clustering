@@ -49,4 +49,4 @@ Add here credits. Project inspired by..., based on...
 
 ## Author
 * [Adhi Setiawan](https://www.linkedin.com/in/adhiisetiawan) 
-* [Giffaro Nandra Rhidoaldi]()
+* [Giffaro Nandra Ridhoaldi](https://www.linkedin.com/in/giffaro-nandra-ridhoaldi-0469b71b5/)
